@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "54f8b1ad-c095-497f-aa8a-ccc1715dea6a",
+		"name": "graphgl",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "query",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": " {\r\n\r\n      onePeople: people(id:11) {\r\n        id\r\n        firstName\r\n        lastName\r\n        email\r\n        posts {\r\n            title\r\n        }\r\n    }\r\n\r\n    people {\r\n        id\r\n        firstName\r\n        lastName\r\n        email\r\n        posts {\r\n            title\r\n        }\r\n    }\r\n\r\n    posts{\r\n        title\r\n        content\r\n        person {\r\n            id\r\n            firstName\r\n        }\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPerson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation {\r\n  addPerson(firstName: \"Tom\", lastName: \"lastName\", email: \"tom@email.ru\") {\r\n    id\r\n    firstName\r\n    lastName\r\n    email\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation {\r\n  addPost(userId: 11, title: \"title\", content: \"content\") {\r\n    title\r\n    content\r\n    person {\r\n            id\r\n            firstName\r\n        }\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
