@@ -8,5 +8,4 @@
 - graphql-demo 4 - graphql-http vs express-graphql
 - graphql-demo 5 - graphql-http with Sequelize
 
-- Apollo-server - @apollo/server (ts)
 - MySQL_GraphQL_VueJS - express-graphql with Sequelize
