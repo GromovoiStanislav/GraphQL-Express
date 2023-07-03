@@ -1,0 +1,22 @@
+query Message{
+    message
+}
+
+// {
+//     "data": {
+//         "message": "Hello World!"
+//     }
+// }
+
+
+
+
+query Hello{
+    hello
+}
+
+// {
+//     "data": {
+//         "hello": "world"
+//     }
+// }
