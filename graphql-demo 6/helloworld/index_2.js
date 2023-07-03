@@ -10,18 +10,21 @@ const schema = new GraphQLSchema({
     query: new GraphQLObjectType({
         name: 'RootQueryType',
         fields: {
+
             hello: {
                 type: GraphQLString,
                 resolve() {
                     return 'World';
                 },
             },
+
             helloWorld: {
                 type: GraphQLString,
                 resolve() {
                     return 'Hello World';
                 },
             },
+
         },
     }),
 });

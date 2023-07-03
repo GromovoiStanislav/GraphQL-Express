@@ -11,6 +11,7 @@ const resolvers = () => {
     const message = () => {
         return "Hello World";
     };
+
     const hello = () => {
         return "World";
     };
