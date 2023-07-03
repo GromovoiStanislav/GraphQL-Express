@@ -2,8 +2,7 @@ import express from 'express';
 import {GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLNonNull, GraphQLInt, GraphQLList} from 'graphql';
 import {createHandler} from 'graphql-http/lib/use/express';
 
-// importing data
-//import {courses} from './data.json';
+// importing data from json
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 const {courses} = require('./data.json');
