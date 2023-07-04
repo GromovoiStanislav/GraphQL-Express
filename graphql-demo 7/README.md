@@ -2,7 +2,6 @@
 
 ```
 npm i express
-npm i graphql
 npm i graphql-http
 npm i @graphql-tools/schema
 ```
