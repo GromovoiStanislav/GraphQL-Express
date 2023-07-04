@@ -9,6 +9,7 @@
 - graphql-demo 5 - graphql-http with Sequelize
 - graphql-demo 6 - graphql course
 - graphql-demo 7 - graphql-http and @graphql-tools/schema with Mongoose
-- graphql-demo 8 - graphql-http - Blog API with Authentication and Mongoose
+- graphql-demo 8 - graphql-http Blog API with Authentication and Mongoose
+- graphql-demo 9 - (ts) graphql-http with Express, TypeORM
 
 - MySQL_GraphQL_VueJS - express-graphql with Sequelize
