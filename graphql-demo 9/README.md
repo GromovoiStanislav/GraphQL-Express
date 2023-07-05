@@ -1,4 +1,4 @@
-## graphql-http (ts) with Express, TypeORM
+## graphql-http (ts) with TypeORM
 
 ```
 query Greeting {
